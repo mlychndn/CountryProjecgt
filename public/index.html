@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="dropdown-container"></div>
+    <div id="display-container"></div>
+    <div id="input-container">
+      <form class="input-form">
+        <label class="label" for="country-name"
+          >Country name:
+          <input type="text" placeholder="Enter country name" id="country-name"
+        /></label>
+
+        <label class="label" for="country-flag"
+          >Flag image:
+          <input type="file" name="photo" accept="image/*" id="country-flag"
+        /></label>
+        <label class="label" for="country-rank"
+          >Rank:
+          <input
+            type="number"
+            placeholder="Enter rank of the country"
+            id="country-rank"
+        /></label>
+        <label class="label" for="continent"
+          >Select Continent:
+          <select id="continent">
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="NorthAmerica">North America</option>
+            <option value="South America">South America</option>
+            <option value="Antartica">Antartica</option>
+            <option value="Australia">Australia</option>
+          </select></label
+        >
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
